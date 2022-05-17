@@ -10,9 +10,7 @@ Tags:     	  light, dark, two-columns, right-sidebar, responsive-layout, accessi
 Text Domain:  accelerate-theme-child
 */
 
-body {
-  color: red;
-}
+
 /* FOOTER Nav Styles */
 .social-media-menu {
   list-style-type: none;
@@ -210,9 +208,9 @@ p {
   margin: 0.25em auto 2em auto;
 }
 
-#nf-field-5,
-#nf-field-6,
-#nf-field-7 {
+#nf-field-1,
+#nf-field-2,
+#nf-field-3 {
   background-color: #fff;
 }
 
@@ -220,11 +218,12 @@ p {
   font-weight: normal;
 }
 
+.nf-form-fields-required,
 .ninja-forms-req-symbol {
   display: none;
 }
 
-#nf-field-8 {
+#nf-field-4 {
   background-color: #44a694;
   float: right;
   width: 25%;
