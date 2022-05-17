@@ -1,0 +1,335 @@
+/*
+Theme Name:   Accelerate Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Accelerate Child Theme - Accelerate
+Author:   	  Alejandra Valdivia
+Author URI:   http://accelerate755.wpengine.com/
+Template: 	  accelerate-theme
+Version:      2.0.0
+Tags:     	  light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  accelerate-theme-child
+*/
+
+body {
+  color: red;
+}
+/* FOOTER Nav Styles */
+.social-media-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media-menu li {
+  background: #333;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-menu li a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* HOMEPAGE Styles */
+.page-header .primary-navigation ul li a {
+  margin: 0 1.5em;
+}
+
+#masthead,
+.button {
+  background: #44a694;
+}
+
+.hero-content {
+  background-image: url(img/taxi-photo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.featured-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.featured-work h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 3em;
+}
+
+.homepage-featured-work {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.individual-featured-work h3 {
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: 400;
+}
+
+.blog-post,
+.tweet-widget {
+  width: 50%;
+  float: left;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+.blog-post h4,
+.tweet-widget h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 0.5em;
+}
+
+.blog-post h3 {
+  font-size: 1.5em;
+}
+
+.blog-post p {
+  margin: 2em 0;
+}
+
+.read-more-link,
+.tweet-follow {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #44a694;
+  text-transform: uppercase;
+}
+
+.widget-title {
+  margin: 0;
+}
+
+#ctf p.ctf-tweet-text {
+  margin: 0.5em 0 !important;
+  line-height: 1.65 !important;
+}
+
+/* Custom Post Type: CASE STUDIES STYLES */
+.case-study {
+  overflow: auto;
+}
+
+.case-study .case-study-sidebar {
+  float: left;
+  width: 45%;
+  padding: 2em 2.5em 0 0;
+  box-sizing: border-box;
+}
+
+.case-study .case-study-sidebar h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.case-study .case-study-sidebar h4 {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.case-study .case-study-sidebar h4 span {
+  color: #a6a6a6;
+}
+
+.case-study .case-study-sidebar p {
+  margin: 0;
+}
+
+.case-study .screenshots {
+  float: left;
+  width: 55%;
+  padding: 2em 0;
+}
+
+.screenshots img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4em;
+}
+
+/* CASE STUDIES ARCHIVE STYLES */
+.case-study-archive {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 2em;
+}
+
+.case-study-sidebar-archive {
+  width: 35%;
+  margin: 2em;
+}
+
+.case-study-sidebar-archive h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.case-study-sidebar-archive h4 {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.case-study-sidebar-archive h4 span {
+  color: #a6a6a6;
+}
+
+.case-study-sidebar-archive p {
+  margin: 0;
+}
+
+.case-study-archive .screenshots img {
+  width: 100%;
+  max-width: 514px;
+  height: auto;
+}
+
+/* CONTACT Form Styles */
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0.25em auto 2em auto;
+}
+
+#nf-field-5,
+#nf-field-6,
+#nf-field-7 {
+  background-color: #fff;
+}
+
+.main-content .nf-field-label label {
+  font-weight: normal;
+}
+
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+#nf-field-8 {
+  background-color: #44a694;
+  float: right;
+  width: 25%;
+}
+
+/* ABOUT Page Styles */
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 3em 0;
+}
+
+.about-page .about-hero-text {
+  color: #fff;
+  font-size: 1.25em;
+  width: 50%;
+  text-align: center;
+  margin: 2em;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-services-intro {
+  text-align: center;
+  width: 65%;
+}
+
+.featured-services-intro h3 {
+  text-transform: uppercase;
+}
+
+.featured-service-item {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-service-icon,
+.featured-service-item img {
+  margin: 2em 4em;
+}
+
+.featured-service-text h4 {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.contact-link {
+  border-top: 1px solid #bfbfbf;
+}
+
+.contact-link .content-wrapper {
+  margin-top: 1.5em;
+}
+
+.contact-link p {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 2em 1em;
+}
+
+/* 404 ERROR Page Styles */
+.error-page {
+  background-image: url('img\karsten-winegeart-2rHw1I_IoT4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.error-message {
+  padding: 2em;
+}
+
+.error-message h2 {
+  color: #fff;
+  font-size: 3em;
+  font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+
+.error-message p {
+  color: #fff;
+  font-size: 2em;
+}
+
+.error-message a {
+  color: #44a694;
+  font-weight: 700;
+}
+
+.photo-credit {
+  padding: 0.5em 1em;
+}
+.photo-credit a {
+  color: #fff;
+}
+
+/* NEWSLETTER Widget Styles */
+input[type='submit'] {
+  background-color: #44a694;
+  padding: 0 0.5em;
+}
+
+/* SOCIAL SHARING Widget Styles */
+.sfsi_responsive_icons .sfsi_responsive_icon_follow_container {
+  background-color: #44a694;
+}
