@@ -108,6 +108,7 @@ Text Domain:  accelerate-theme-child
 }
 
 .widget-title {
+  font-size: 1.25em;
   margin: 0;
 }
 
@@ -325,7 +326,7 @@ p {
 /* NEWSLETTER Widget Styles */
 input[type='submit'] {
   background-color: #44a694;
-  padding: 0 0.5em;
+  padding: 0 1.5em;
 }
 
 /* SOCIAL SHARING Widget Styles */
