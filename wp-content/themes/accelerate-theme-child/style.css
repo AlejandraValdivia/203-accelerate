@@ -152,13 +152,14 @@ Text Domain:  accelerate-theme-child
             }
 
 /* ABOUT Page Styles */
-/* .home-page .hero-content {
+//This is just a test see if the hero image and text works in mobile
+.home-page .hero-content {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 0 3em 0;
-} */
-
+}
+//////////////////////////////////////////
 .main-content-about p {
   font-size: 1.2em;
   color: #ffffff;
