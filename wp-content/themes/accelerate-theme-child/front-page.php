@@ -27,29 +27,31 @@ get_header(); ?>
 	</div><!-- .main-content -->
 </div><!-- #primary -->
 
-	<section class="featured-work">
-		<div class="site-content">
+<section class="featured-work">
+	<div class="site-content">
 			<h4>Featured Work</h4>
-			<div class="homepage-featured-work">
-			<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
-			<!-- The loop -->
-			<?php while ( have_posts() ) : the_post(); 
-					$image_1 = get_field('image_1');
-					$size = "medium";
-			?>
-					<div class="individual-featured-work">
 
-					<figure>
-						<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( $image_1, $size ); ?></a>
-					</figure>
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					</div>
+			<ul class="homepage-featured-work">
+					<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+					<!-- The loop -->
+					<?php while ( have_posts() ) : the_post(); 
+							$image_1 = get_field('image_1');
+							$size = "medium";
+					?>
+					
+					<li class="individual-featured-work>
+							<figure>
+								<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( $image_1, $size ); ?></a>
+							</figure>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					</li>
+			
 
-  		<?php endwhile; // end of the loop. ?>
-			<?php wp_reset_query(); // resets the altered query back to the original ?>
-			</div>
-			</div>
-	</section>
+					<?php endwhile; // end of the loop. ?>
+					<?php wp_reset_query(); // resets the altered query back to the original ?>
+			</ul>
+	</div><!--.site-content  -->
+</section>
 
 	<!-- RECENT BLOG POST -->
 	<section class="recent-posts">
@@ -59,7 +61,7 @@ get_header(); ?>
 			<?php query_posts('posts_per_page=1'); ?>
 			<!-- The loop -->
 			<?php while ( have_posts() ) : the_post(); ?>
-					<h2><?php the_title(); ?></h2>
+					<h3><?php the_title(); ?></h3>
 					<?php the_excerpt(); ?>
   		<?php endwhile; // end of the loop. ?> 
 			<?php wp_reset_query(); // resets the altered query back to the original ?>

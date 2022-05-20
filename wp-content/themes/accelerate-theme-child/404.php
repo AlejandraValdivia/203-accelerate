@@ -18,12 +18,12 @@ get_header(); ?>
              There's nothing here.<br>
              Looking for one of<br> 
              these?</p>
-          <div class="error-message">
-            <a class="button" href="<?php echo site_url('/homepage/') ?>">Home</a>
+          <div class="error-button">
+            <a class="button-to-homepage" href="<?php echo site_url('/homepage/') ?>">Home</a>
           </div>
 			</div>
 			
-			<div class="photo-credit error message">
+			<div class="photo-credit">
       <p>Photo by <a href="https://unsplash.com/@karsten116?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karsten Winegeart</a> on <a href="https://unsplash.com/s/photos/funny-dogs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     </div>
 		</div><!-- .main-content -->
