@@ -93,19 +93,17 @@ Text Domain:  accelerate-theme-child
             
 
 /* Blog Posts FRONT PAGE styles */
-
-.blog-post,
-.tweet-widget {
-  width: 100%;
+.blog-post {
+  width: 65%;
+  margin-bottom: 2em;
+  margin: 20%;
 }
 
-.blog-post h4,
-.tweet-widget h4 {
+.blog-post h4 {
   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
   margin: 2em 0 0.5em;
-  text-align: center;
 }
 
 .blog-post h3 {
@@ -113,53 +111,127 @@ Text Domain:  accelerate-theme-child
   margin-top: 25px;
 }
 
-.blog-post p {
-  margin: 2em 0;
-}
-
-.read-more-link,
-.tweet-follow {
+.read-more-link {
   font-family: 'Montserrat';
   font-weight: 700;
   color: #44a694;
   text-transform: uppercase;
 }
 
-.widget-title {
-  font-size: 1.5em;
-  margin-top: 20px;
+          /* -----Media Query FRONT PAGE Blog Post styles----- */
+          @media (min-width: 768px) {
+            .blog-post {
+              width: 50%;
+              float: left;
+              margin-bottom: 2em;
+              padding: 0 0 0 5%;
+            }
+          }
+
+/* ----- TWITTER widget ----- */
+.twitter-posts {
+  width: 100%;
+  margin-right: 15%;
+  margin-bottom: 2em;
 }
 
-#ctf p.ctf-tweet-text {
+.tweet-widget ul {
+  list-style-type: none;
+  margin: 5% 1% 3% 0%;
+}
+
+.tweet-widget li {
+  text-align: left;
+  width: 100%;
+  margin-left: 5%;
+}
+
+/*#ctf p.ctf-tweet-text {
   margin: 0.5em 0 0.2em !important;
   line-height: 1.65 !important;
+} */
+
+
+/* -----Media Queries for TWITTER widget ----- */
+/*@media (min-width: 768px) {
+  #ctf p.ctf-tweet-text {
+    margin: 0.5em 0 0.2em !important;
+    line-height: 1.65 !important;
+    width: 50%;
+  }
+}*/
+
+/* ---- Fonts and links Recent TWEET ---- */
+.tweet-widget h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 .5em;
+  margin-left: 23%;
+}
+/* @Accelerate LINK */
+.twitter-posts h3 {
+  font-size: 1.5em;
+  margin-top: 25px;
+  margin-left: 23%;
 }
 
-            /* -----Media Query FRONT PAGE Blog Post & Twitter widget styles----- */
-            @media (min-width: 768px) {
-              .blog-post,
-              .tweet-widget {
-                width: 50%;
-                float: left;
-                margin-bottom: 2em;
-                padding: 2em;
-              }
+/* Follow us link */
+.read-more-link h4 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #45ac9d;
+  text-transform: uppercase;
+  margin-left: 23%;
+}
+      /* Media query TWITTER WIDGET */
+      @media (min-width: 768px) {
+        twitter-posts {
+          width: 50%;
+          float: right;
+          padding-right: 5%;
+          padding-left: 5%;
+          margin: 0;
+        }
 
-              .blog-post h4,
-              .tweet-widget h4 {
-                text-align: left;
-              }
-            }
+        .tweet-widget ul {
+          margin: 20px 0 0 0;
+          width: 100%;
+        }
+
+        .tweet-widget ul li {
+          margin-left: 0;
+        }
+
+        .tweet-widget h5 {
+          margin-left: 0;
+        }
+
+        .tweets li {
+          width: 79%;
+          margin: 0 60% 0 0;
+        }
+
+        .tweeter-posts h3 {
+          margin-left: 0;
+          font-size: 1.5em;
+        }
+
+        .read-more-link h4 {
+          margin-left: 0;
+        }
+      }
+
 
 /* ABOUT Page Styles */
-//This is just a test see if the hero image and text works in mobile
+
 .home-page .hero-content {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 0 3em 0;
 }
-//////////////////////////////////////////
+
 .main-content-about p {
   font-size: 1.2em;
   color: #ffffff;

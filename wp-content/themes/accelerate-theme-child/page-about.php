@@ -18,75 +18,73 @@ get_header(); ?>
 			<div class="main-content-about" role="main">
 					
 			<?php while ( have_posts() ) : the_post();
-			$services_page_heading = get_field('services_page_heading');
-			$services_page_description = get_field('services_page_description');
-			$service_1_icon = get_field('service_1_icon');
-			$service_1_title = get_field('service_1_title');
-			$service_1_description = get_field('service_1_description');
-			$service_2_title = get_field('service_2_title');
-			$service_2_description = get_field('service_2_description');
-			$service_2_icon = get_field('service_2_icon');
-			$service_3_icon = get_field('service_3_icon');
-			$service_3_title = get_field('service_3_title');
-			$service_3_description = get_field('service_3_description');
-			$service_4_title = get_field('service_4_title');
-			$service_4_description = get_field('service_4_description');
-			$service_4_icon = get_field('service_4_icon');
-			// $contact_tagline = get_field('contact_tagline');
+            $our_services = get_field('our_services');
+            $our_services_description = get_field('our_services_description');
+            $icon_1 = get_field('icon_1');
+            $strategy = get_field('strategy');
+            $strategy_description = get_field('strategy_description');
+            $mapping = get_field('mapping');
+            $mapping_description = get_field('mapping_description');
+            $icon_2 = get_field('icon_2');
+            $icon_3 = get_field('icon_3');
+            $social_media_strategy = get_field('social_media_strategy');
+            $social_media_strategy_description = get_field('social_media_strategy_description');
+            $design_development = get_field('design_development');
+            $design_development_description = get_field('design_development_description');
+            $icon_4 = get_field('icon_4');
+            $size = "medium";
+        ?>
 
-			$size = "medium";
-
-		?>
           <?php the_content(); ?> 
 					<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
 	<div class="our-services">
-		<h4><?php echo $services_page_heading; ?></h4>
-		<p><?php echo $services_page_description; ?></p>
+		<h4><?php echo $our_services; ?></h4>
+		<p><?php echo $our_services_description; ?></p>
 	</div>
 
 	<div id="secondary">
 
 			<article class="content-strategy">
 				<div class="icon-left">
-						<?php if($service_1_icon) { echo wp_get_attachment_image($service_1_icon, $size); } ?>
+						<?php if($icon_1) { echo wp_get_attachment_image($icon_1, $size); } ?>
 				</div>
 				<div class="text-right">
-					<h4><?php echo $service_1_title; ?></h4>
-					<p><?php echo $service_1_description; ?></p>				
+					<h4><?php echo $strategy; ?></h4>
+					<p><?php echo $strategy_description; ?></p>				
 				</div>
 			</article>
 
 				
 				<article class="influencer-mapping">
 					<div class="icon-right">
-						<?php if($service_2_icon) { echo wp_get_attachment_image($service_2_icon, $size); } ?>
+						<?php if($icon_2) { echo wp_get_attachment_image($icon_2, $size); } ?>
 					</div>
 					<div class="text-left">
-						<h4><?php echo $service_2_title; ?></h4>
-						<p><?php echo $service_2_description; ?></p>
+						<h4><?php echo $mapping; ?></h4>
+						<p><?php echo $mapping_description; ?></p>
 					</div>
 				</article>
 
-				<article class="content-strategy">
+				<article class="social-media-strategy">
 				<div class="icon-left">
-						<?php if($service_3_icon) { echo wp_get_attachment_image($service_3_icon, $size); } ?>
+						<?php if($icon_3) { echo wp_get_attachment_image($icon_3, $size); } ?>
 				</div>
 				<div class="text-right">
-					<h4><?php echo $service_3_title; ?></h4>
-					<p><?php echo $service_3_description; ?></p>				
+					<h4><?php echo $social_media_strategy; ?></h4>
+					<p><?php echo $social_media_strategy_description; ?></p>				
 				</div>
 			</article>
 
 				<article class="design-development">
 					<div class="icon-right">
-						<?php if($service_4_icon) { echo wp_get_attachment_image($service_4_icon, $size); } ?>
+						<?php if($icon_4) { echo wp_get_attachment_image($icon_4, $size); } ?>
 					</div>
 					<div class="text-left">
-						<h4><?php echo $service_4_title; ?></h4>
-						<p><?php echo $service_4_description; ?></p>
+						<h4><?php echo $design_development; ?></h4>
+						<p><?php echo $design_development_description; ?></p>
 					</div>
 			</article>
 	</div>
