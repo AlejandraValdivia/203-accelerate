@@ -94,7 +94,7 @@ Text Domain:  accelerate-theme-child
 
 /* Blog Posts FRONT PAGE styles */
 .blog-post {
-  width: 65%;
+  width: 100%;
   margin-bottom: 2em;
   margin: 20%;
 }

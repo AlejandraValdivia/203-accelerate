@@ -76,7 +76,7 @@ get_header(); ?>
 					<h4><?php echo $social_media_strategy; ?></h4>
 					<p><?php echo $social_media_strategy_description; ?></p>				
 				</div>
-			</article>
+				</article>
 
 				<article class="design-development">
 					<div class="icon-right">
@@ -87,9 +87,9 @@ get_header(); ?>
 						<p><?php echo $design_development_description; ?></p>
 					</div>
 			</article>
-	</div>
+	
 
-</div><!--#id=secondary ends --->
+	</div><!--#id=secondary ends --->
 
 <nav id="navigation" class="container">
 		<p><?php echo $contact_tagline; ?></p>
