@@ -96,7 +96,7 @@ Text Domain:  accelerate-theme-child
 .blog-post {
   width: 100%;
   margin-bottom: 2em;
-  margin: 20%;
+  margin-left: 0;
 }
 
 .blog-post h4 {
@@ -116,6 +116,7 @@ Text Domain:  accelerate-theme-child
   font-weight: 700;
   color: #44a694;
   text-transform: uppercase;
+  text-align: left;
 }
 
           /* -----Media Query FRONT PAGE Blog Post styles----- */
@@ -143,23 +144,24 @@ Text Domain:  accelerate-theme-child
 .tweet-widget li {
   text-align: left;
   width: 100%;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 
-/*#ctf p.ctf-tweet-text {
-  margin: 0.5em 0 0.2em !important;
+#ctf p.ctf-tweet-text {
+  margin: 0.5em !important;
   line-height: 1.65 !important;
-} */
+  margin-left: 4%;
+} 
 
 
-/* -----Media Queries for TWITTER widget ----- */
-/*@media (min-width: 768px) {
+ -----Media Queries for TWITTER widget ----- */
+@media (min-width: 768px) {
   #ctf p.ctf-tweet-text {
     margin: 0.5em 0 0.2em !important;
     line-height: 1.65 !important;
     width: 50%;
   }
-}*/
+}
 
 /* ---- Fonts and links Recent TWEET ---- */
 .tweet-widget h4 {
@@ -167,13 +169,13 @@ Text Domain:  accelerate-theme-child
   color: #a6a6a6;
   text-transform: uppercase;
   margin: 2em 0 .5em;
-  margin-left: 23%;
+  margin-left: 4%;
 }
 /* @Accelerate LINK */
 .twitter-posts h3 {
   font-size: 1.5em;
   margin-top: 25px;
-  margin-left: 23%;
+  margin-left: 4%;
 }
 
 /* Follow us link */
@@ -182,7 +184,7 @@ Text Domain:  accelerate-theme-child
   font-weight: 700;
   color: #45ac9d;
   text-transform: uppercase;
-  margin-left: 23%;
+  margin-left: 4%;
 }
       /* Media query TWITTER WIDGET */
       @media (min-width: 768px) {
@@ -252,6 +254,7 @@ Text Domain:  accelerate-theme-child
 /* General Body styles */
 #secondary h4 {
   font-size: 1.2em;
+  margin-left: 4%;
 }
 
 .icon-left,
