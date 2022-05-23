@@ -56,29 +56,33 @@ get_header(); ?>
 
 <!----- Recent BLOG post and TWITTER widget  ---->
 
+<!-- RECENT BLOG POST -->
 <section class="recent-posts">
 		<div class="site-content">
 			<div class="blog-post">
-				<h4>From the Blog</h4>
-				<?php query_posts('posts_per_page=1'); ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<h2><?php the_title(); ?></h2>
-						<?php the_excerpt(); ?>
-					<?php endwhile; ?>
-				<?php wp_reset_query(); ?>
-			</div>
-		
-			<div class="tweet-widget">	
-				<h4>Recent Tweet</h4>
-				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-					<div id="secondary" class="widget-area" role="complementary">
-						<?php dynamic_sidebar( 'sidebar-2' ); ?>
-					</div>
-				<?php endif; ?>
-				<p class="tweet-follow"> 
-					<a href="https://twitter.com/Alex_V1000" target="_blank">Follow Us ›</a>
-				</p>
-			</div>
+			<h4>From the Blog</h4>
+			<?php query_posts('posts_per_page=1'); ?>
+			<!-- The loop -->
+			<?php while ( have_posts() ) : the_post(); ?>
+					<h2><?php the_title(); ?></h2>
+					<?php the_excerpt(); ?>
+  		<?php endwhile; // end of the loop. ?> 
+			<?php wp_reset_query(); // resets the altered query back to the original ?>
+ 			</div>
+
+
+			 <!-- Tweet widget starts here -->
+			 <div class="tweet-widget">
+					<h4>Recent Tweet</h4>
+						<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+								<div id="secondary" class="widget-area" role="complementary">
+									<?php dynamic_sidebar( 'sidebar-2' ); ?>
+								</div>
+							<?php endif; ?>
+					<p class="tweet-follow">
+								<a href="https://twitter.com/Alex_V1000" target="_blank">Follow us ›</a>
+					</p>
+			 </div>
 		</div>
 	</section>
 
