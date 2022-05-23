@@ -95,10 +95,10 @@ Text Domain:  accelerate-theme-child
 /* Blog Posts FRONT PAGE styles */
 .blog-post,
 .tweet-widget {
-  width: 50%;
+  width: 100%;
   float: left;
   margin-bottom: 2em;
-  padding: 2em;
+  /*padding: 2em;  */
 }
 
 .blog-post h4,
@@ -135,7 +135,40 @@ Text Domain:  accelerate-theme-child
   line-height: 1.65 !important;
 }
 
+          /* MEDIA QUERY BLOG POST STYLES */
+		/* BLOG POST STYLES */
+		@media (min-width: 768px) {
+			.blog-post, 
+      .tweet-widget {
+				width: 50%;
+				float: left;
+				margin-bottom: 2em;
+				margin: 0 0 0 5%;
+			}
+		}
 
+
+		/* -----Media Query FRONT PAGE Blog Post styles----- */
+    @media (min-width: 768px) {
+      .blog-post {
+        width: 40%;
+        float: left;
+        margin-bottom: 2em;
+        padding: 0;
+    }
+  .tweet-widget {
+    /* text-align: left; */
+    /* float: left; */
+    width: 60%;
+    margin: auto;
+  }
+  #ctf p.ctf-tweet-text {
+margin: 0.5em  !important;
+line-height: 1.65 !important;
+}
+    }
+
+		/*********************************************/
 
 /* ABOUT Page Styles */
 
