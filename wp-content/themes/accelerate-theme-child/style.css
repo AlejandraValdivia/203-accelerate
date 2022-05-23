@@ -203,7 +203,7 @@ Text Domain:  accelerate-theme-child
   margin-left: 4%;
 }
 /* @Accelerate LINK */
-.twitter-posts h3 {
+.tweet-widget h3 {
   font-size: 1.5em;
   margin: 25px 0 0;
   margin-left: 4%;
@@ -227,7 +227,7 @@ Text Domain:  accelerate-theme-child
 }
       /* Media query TWITTER WIDGET */
       @media (min-width: 768px) {
-        .twitter-posts {
+        .tweet-widget {
           width: 50%;
           float: right;
           padding-right: 5%;
