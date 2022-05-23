@@ -114,343 +114,217 @@ Text Domain:  accelerate-theme-child
   line-height: 1.65 !important;
 }
 
-
-          /* MEDIA QUERY BLOG POST STYLES */
-		/* BLOG POST STYLES */
-		/*@media (min-width: 768px) {
-			.blog-post, 
-      .tweet-widget {
-				width: 50%;
-				float: left;
-				margin-bottom: 2em;
-				margin: 0 0 0 5%;
-			}
-		}
-
-
-		/* -----Media Query FRONT PAGE Blog Post styles----- */
-    /*@media (min-width: 768px) {
-      .blog-post {
-        width: 40%;
-        float: left;
-        margin-bottom: 2em;
-        padding: 0;
-    }
-  .tweet-widget {
-    /* text-align: left; */
-    /* float: left; */
-   /* width: 60%;
-      margin: auto;
-  }
-      #ctf p.ctf-tweet-text {
-      margin: 0.5em  !important;
-      line-height: 1.65 !important;
-}
-    } */
-
-		/*********************************************/
-
-
-    
-/* ABOUT Page Styles */
-
-.home-page .hero-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 0 3em 0;
-}
-
-.main-content-about p {
-  font-size: 1.2em;
-  color: #ffffff;
-  margin: 0 10%;
-}
-
-/* Main Content */
-.our-services h4,
-.our-services {
-  text-align: center;
-  margin: 0 10%;
-}
-
-.our-services p {
-  margin-bottom: 20%;
-}
-
-/* General Body styles */
-#secondary h4 {
-  font-size: 1.2em;
-  margin-left: 4%;
-}
-
-.icon-left,
-.icon-right {
-  padding: 20px 0 0px 0;
-  margin: 0 29%;
-}
-
-/* Alternating styles Icon and Text */
-.content-strategy,
-.influcencer-mapping,
-.social-media-strategy,
-.design-development {
-  margin: 5% 10% 20% 10%;
-}
-
-/* Lower NAV and BUTTON area */
-#navigation.container {
+/* Custom Post Type: Case Studies styles */
+.case-study {
   overflow: auto;
 }
 
-#navigation p {
-  font-weight: bold;
+.case-study .case-study-sidebar {
+  float: left;
+  width: 45%;
+  padding: 2em 2.5em 0 0;
+  box-sizing: border-box;
+}
+
+.case-study .case-study-sidebar h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.case-study .case-study-sidebar h4 {
   font-size: 1em;
-  margin-top: 0;
-  padding: .3em 0;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
-#navigation .button {
-  padding: .80em 3.80em;
+.case-study .case-study-sidebar h4 span {
+  color: #a6a6a6;
 }
 
-          /* ----- Media Query HEADER and FOOTER NAV ----- */
-            /*  ABOUT page styles */
-            @media (min-width: 768px) {
-              /* HEADER */
-              .main-content-about p {
-                font-size: 1.5em;
-                color: #ffffff;
-                margin: 0 30%;
-              } 
-
-              /* MAIN CONTENT */
-              .our-services h4,
-              .our-services {
-                text-align: center;
-                margin: 0 30%;
-              }
-              .our-services p {
-                margin-bottom: 70px;
-              }
-
-              /* GENERAL BODY STYLES */
-              #secondary {
-                margin: 0 25%;
-              }
-              #secondary h4 {
-                font-size: 1.2em;
-              }
-
-              .icon-right,
-              .icon-left {
-                padding: 0;
-                margin: 0;
-              }
-
-              /* Alternating styles ICON and TEXT */
-              .content-strategy,
-              .influcencer-mapping,
-              .social-media-strategy,
-              .design-development {
-                margin: 0 0 12% 0;
-                overflow: auto;
-              }
-
-              .design-development {
-                margin-bottom: 10%;
-              }
-
-              .icon-left {
-                float: left;
-                width: 25%;
-                margin-top: 30px;
-              }
-
-              .text-right {
-                float: right;
-                width: 65%;
-              }
-
-              .icon-right {
-                float: right;
-                width: 25%;
-                margin-top: 30px;
-              }
-
-              .text-left {
-                float: left;
-                width: 65%;
-              }
-
-              /* Lower NAV and BUTTON area */
-              #navigation.container {
-                overflow: auto;
-              }
-
-              #navigation p {
-                font-size: 1.4em;
-                display: inline-block;
-                margin: 30px 40px;
-              }
-            }
-              
-
-/* Custom Post Type: CASE STUDIES STYLES */
-
-.case-study {
-  margin-bottom: 10px;
+.case-study .case-study-sidebar p {
+  margin: 0;
 }
 
-.case-study-sidebar {
-  width: 90%;
-  color: #636060
-  padding-bottom: 15px;
-}
-
-aside h2 {
-  font-size: 1em;
-  margin-top: 15px;
-}
-
-aside h4 {
-  font-weight: lighter;
-  font-size: .7em;
-  margin-top: 10px
-}
-
-aside h4 span {
-  font-weight: 600;
-}
-
-.screenshots {
-  width: 100%;
+.case-study .screenshots {
+  float: left;
+  width: 55%;
+  padding: 2em 0;
 }
 
 .screenshots img {
-  margin-bottom: 60px;
   width: 100%;
+  height: auto;
+  margin-bottom: 4em;
+}
+
+/* Case Studies Archive Styles */
+.case-study-archive {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 2em;
+}
+
+.case-study-sidebar-archive {
+  width: 35%;
+  margin: 2em;
+}
+
+.case-study-sidebar-archive h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+
+.case-study-sidebar-archive h4 {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.case-study-sidebar-archive h4 span {
+  color: #a6a6a6;
+}
+
+.case-study-sidebar-archive p {
+  margin: 0;
+}
+
+.case-study-archive .screenshots img {
+  width: 100%;
+  max-width: 514px;
   height: auto;
 }
 
-
-
-            /* ----- Media Query CASE STUDY STYLES ----- */
-            @media (min-width: 768px) {
-
-            
-                .case-study {
-                  overflow: auto;
-                  margin-bottom: 45px;
-                }
-
-                .case-study-sidebar {
-                  float: left;
-                  width: 40%;
-                }
-
-                .screenshots img {
-                  float: right;
-                  width: 60%;
-                }
-            }
-
-
-/* CASE STUDIES ARCHIVE STYLES */
-.case-study-sidebar-archive {
-  width: 90%;
+/* Custom Post Type: Careers styles */
+.job-type {
+  margin: 0;
 }
 
-.screenshots img {
-  width: 100%;
+.general-descrition {
+  margin: 2em auto;
+}
+
+/* apply button styles */
+.button:hover {
+  background-color: darkcyan;
 }
 
 
 
-/* MEDIA QUERY CASE STUDIES ARCHIVE STYLES */
-@media (min-width: 768px) {
-  /*.case-study-archive {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-top: 2em;
-  } */
-  
-  .case-study-sidebar-archive {
-    float: left;
-    width: 31%;
-  }
-  
-  /*
-  .case-study-sidebar-archive h2 {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  .case-study-sidebar-archive h4 {
-    font-size: 1em;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .case-study-sidebar-archive h4 span {
-    color: #a6a6a6;
-  }
-  
-  .case-study-sidebar-archive p {
-    margin: 0;
-  }
-  
-  */
-  .screenshots img {
-    float: right;
-    width: 60%;
-  }
-  
+/* Careers Archive Styles */
+.careers-header {
+  text-align: center;
 }
 
-/* CONTACT Form Styles */
+.careers-header h1 {
+  font-size: 36px;
+}
+
+.archive-job-title:hover {
+  color: #44A694;
+
+}
+
+
+/* TODO: specify these styles so they're only for contact form, not overriding the others */
+/* Contact Form Styles */
 h2 {
   margin: 0;
 }
 
 p {
-  margin: 0.25em auto 2em auto;
+  margin: .25em auto 2em auto;
 }
 
-#nf-field-1,
-#nf-field-2,
-#nf-field-3 {
+#nf-field-5, #nf-field-6, #nf-field-7 {
   background-color: #fff;
 }
 
-.main-content .nf-field-label label {
+
+.main-content .nf-field-label label {      
   font-weight: normal;
 }
 
-.nf-form-fields-required,
 .ninja-forms-req-symbol {
   display: none;
 }
 
-#nf-field-4 {
-  background-color: #44a694;
+#nf-field-8 {
+  background-color: #44A694;
   float: right;
   width: 25%;
+
 }
 
+/* About Page Styles */
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 3em 0;
+ 
+}
 
-/* 404 ERROR Page Styles */
+.about-page
 
+.about-hero-text {
+  color: #fff;
+  font-size: 1.25em;
+  width: 50%;
+  text-align: center;
+  margin: 2em;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-services-intro {
+  text-align: center;
+  width: 65%;
+}
+
+.featured-services-intro h3 {
+  text-transform: uppercase;
+}
+
+.featured-service-item {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-service-icon, .featured-service-item img {
+  margin: 2em 4em;
+}
+
+.featured-service-text h4 {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.contact-link {
+  border-top: 1px solid #bfbfbf;
+}
+
+.contact-link .content-wrapper {
+  margin-top: 1.5em;
+}
+
+.contact-link p {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 2em 1em;
+}
+
+/* 404 Error Page Styles */
 .error-page {
-  background-image: url('img/karsten-winegeart-2rHw1I_IoT4-unsplash.jpg');
+  background-image: url('img/braydon-anderson-wOHH-NUTvVc-unsplash.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  min-height: auto;
-  margin: 0;
 }
 
 .error-message {
@@ -469,27 +343,24 @@ p {
 }
 
 .error-message a {
-  color: #fff;
+  color: #44A694;
   font-weight: 700;
 }
-.button-to-homepage {
-  background-color: #333;
-  padding: 1em 2em;
-}
+
 .photo-credit {
-  padding: 0.5em 1em;
+  padding: .5em 1em;
 }
 .photo-credit a {
   color: #fff;
 }
 
-/* NEWSLETTER Widget Styles */
-input[type='submit'] {
-  background-color: #44a694;
-  padding: 0 1.5em;
+/* Newsletter Widget Styles */
+input[type="submit"] {
+  background-color: #44A694;
+  padding: 0 .5em;
 }
 
-/* SOCIAL SHARING Widget Styles */
+/* Social Sharing Widget Styles */
 .sfsi_responsive_icons .sfsi_responsive_icon_follow_container {
-  background-color: #44a694;
+  background-color: #44A694;
 }
