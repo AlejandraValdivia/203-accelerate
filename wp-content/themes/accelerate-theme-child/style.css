@@ -93,130 +93,44 @@ Text Domain:  accelerate-theme-child
             
 
 /* Blog Posts FRONT PAGE styles */
-/* BLOG post styles */
-.blog-post {
-	width: 65%;
-	margin-bottom: 2em;
-	margin: 20%;
+.blog-post, .tweet-widget {
+  width: 50%;
+  float: left;
+  margin-bottom: 2em;
+  padding: 2em;
 }
 
-.blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
-    text-transform: uppercase;
-    margin: 2em 0 .5em;
+.blog-post h4, .tweet-widget h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 .5em;
 }
 
 .blog-post h3 {
-	font-size: 1.5em;
-	margin-top: 25px;
+  font-size: 1.5em;
 }
 
-.read-more-link {
-	font-family: 'Montserrat';
-	font-weight: 700;
-	color: #45ac9d;
-	text-transform: uppercase;
+.blog-post p {
+  margin: 2em 0;
 }
 
-		/*********************************************/
-		/* MEDIA QUERY BLOG POST STYLES */
-		/* BLOG POST STYLES */
-		@media (min-width: 768px) {
-			.blog-post {
-				width: 40%;
-				float: left;
-				margin-bottom: 2em;
-				margin: 0 0 0 5%;
-			}
-		}
-		/*********************************************/
-
-/*------------------------------*/
-/* TWITTER WIDGET */
-.twitter-posts{
-	width: 100%;
-	margin-right: 15%;
-	margin-bottom: 2em;
-
+.read-more-link, .tweet-follow {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #44A694;
+  text-transform: uppercase;
 }
 
-.twitter-content ul{
-	list-style-type: none;
-	margin: 5% 20% 3% 20%;
+.widget-title {
+  margin: 0;
 }
 
-.twitter-content li{
-	text-align: left;
-	width: 100%;
-	margin-left: 5%;
-}
 
-/******** FONTS & LINKS ********/
-/* RECENT TWEET TITLE */
-.twitter-content h5 {
-	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
-    text-transform: uppercase;
-	margin: 2em 0 .5em;
-	margin-left: 23%;
+#ctf p.ctf-tweet-text {
+  margin: .5em 0 !important;
+  line-height: 1.65 !important;
 }
-/* @Accelerate LINK */
- .twitter-posts h3 {
-	font-size: 1.5em;
-	margin-top: 25px;
-	margin-left: 23%;
-}
-/* FOLLOW US LINK */
-.read-more-link h4{
-	font-family: 'Montserrat';
-	font-weight: 700;
-	color: #45ac9d;
-	text-transform: uppercase;
-	margin-left: 23%;
-}
-
-		/*********************************************/
-		/* MEDIA QUERY CASE STUDIES STYLES */
-		/* TWITTER WIDGET */
-		@media (min-width: 768px) {
-				.twitter-posts{
-				width: 45%;
-				float: right;
-				padding-right: 5%;
-				padding-left: 5%;
-				margin: 0;
-
-			}
-			
-			.twitter-content ul{
-				margin: 20px 0px 0 0;
-				width: 100%;
-			}
-		
-			.twitter-content ul li{
-				margin-left: 0;
-			}
-
-			/******** FONTS & LINKS ********/
-			/* RECENT TWEET TITLE */
-			.twitter-content h5 {
-				margin-left: 0;
-			}
-			.tweets li{
-				width: 79%;
-				margin: 0 60% 0 0;
-			}
-			/* @Accelerate LINK */
-			.twitter-posts h3 {
-				margin-left: 0;
-				font-size: 1.5em;
-			}
-			/* FOLLOW US LINK */
-			.read-more-link h4{
-				margin-left: 0;
-			}
-		}
 
 
 /* ABOUT Page Styles */
