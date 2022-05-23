@@ -92,7 +92,7 @@ get_header(); ?>
 
 <nav id="navigation" class="container">
     <p>Interested in working with us?</p>
-    <p><a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a></p>
+    <p><a class="button" href="<?php echo site_url('/contact/') ?>">Contact Us</a></p>
 </nav>
 <br>
 
