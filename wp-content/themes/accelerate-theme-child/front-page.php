@@ -56,35 +56,34 @@ get_header(); ?>
 
 <!----- Recent BLOG post and TWITTER widget  ---->
 
-	<section class="recent-posts"><!--.recent-posts starts here--->
-		<div class="site-content">
-					<div class="blog-post">
-								<h4>From the Blog</h4>
-								<?php query_posts('posts_per_page=1'); ?>
-								<!-- The loop -->
-										<?php while ( have_posts() ) : the_post(); ?>
-												<h2><?php the_title(); ?></h2>
-												<?php the_excerpt(); ?>
-										<?php endwhile; // end of the loop. ?> 
-								<?php wp_reset_query(); // resets the altered query back to the original ?>
-					</div>
-		
-			
+<div class="stack">
+	<section class="recent-posts">
+	<div class="site-content">
+	<div class="blog-post">
+		<h4>From the Blog</h4>
+			<?php query_posts('posts_per_page=1'); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<h3><?php the_title(); ?></h3>
+			<?php the_excerpt(); ?> 
+			<?php endwhile; ?> 
+		<?php wp_reset_query(); ?>
+	</div>
+	</div>
+	</section>
 
-								<!-- Tweet widget starts here -->
-				
-					<div class="tweet-widget">
-							<h4>Recent Tweet</h4>
-								<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-										<div id="secondary" class="widget-area" role="complementary">
-													<?php dynamic_sidebar( 'sidebar-2' ); ?>
-										</div>		
-								<?php endif; ?>
-								<p class="follow-us-link">	
-										<h4><a href="https://twitter.com/Alex_V1000" target="_blank">Follow us ›</a></h4>
-								</p>
-					</div>
-				</div><!-- .site-content class ends here -->
-	</section><!-- Blog Twitter section ends here -->
-
+	<section class="twitter-posts">
+	<div class="twitter-content">
+	<h5>Recent Tweet</h5>
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="secondary" class="widget-area" role="complementary">
+			</div>
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>				
+			</div>				
+			<div class="read-more-link">
+				<h4><a href="https://twitter.com/Alex_V1000">Follow Us ></a></h4>			
+			</div>
+		<?php endif; ?>
+	</div>
+	</section>
+</div>
 <?php get_footer(); ?>
