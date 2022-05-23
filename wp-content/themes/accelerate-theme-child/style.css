@@ -168,33 +168,31 @@ Text Domain:  accelerate-theme-child
   font-family: 'Montserrat';
   font-weight: 700;
   color: #45ac9d;
-  text-transform: uppercase;
-
- 
+  text-transform: uppercase; 
 }
+    
+          -----Media Queries for TWITTER widget ----- */
+          @media (min-width: 768px) {
+            /*.tweet-widget {
+              width: 90%;
+            float: left;
+            } */
 
- -----Media Queries for TWITTER widget ----- */
-@media (min-width: 768px) {
-  /*.tweet-widget {
-    width: 90%;
-   float: left;
-  } */
+            #ctf p.ctf-tweet-text {
+              margin: 0.5em 0 0.2em !important;
+              line-height: 1.65 !important;
+              width: 50%;
+            }
+            
+              .twitter-posts {
+                width: 39%;
+                float: right;    
+              }
 
-  #ctf p.ctf-tweet-text {
-    margin: 0.5em 0 0.2em !important;
-    line-height: 1.65 !important;
-    width: 50%;
-  }
-  
-    .twitter-posts {
-      width: 39%;
-      float: right;    
-    }
-
-    .twitter-posts h3 {
-      margin-bottom: 0;
-    }
-}
+              .twitter-posts h3 {
+                margin-bottom: 0;
+              }
+          }
 
 /* ---- Fonts and links Recent TWEET ---- */
 .tweet-widget h4 {
@@ -242,9 +240,9 @@ Text Domain:  accelerate-theme-child
           font-size: 1.5em;
         }
 
-        /*.read-more-link h4 {
-          margin-left: 0;
-        } */
+        .tweet-widget h4 {
+          margin: 0;
+        } 
       }
 
 
@@ -395,86 +393,117 @@ Text Domain:  accelerate-theme-child
               
 
 /* Custom Post Type: CASE STUDIES STYLES */
+
 .case-study {
-  overflow: auto;
+  margin-bottom: 10px;
 }
 
-.case-study .case-study-sidebar {
-  float: left;
-  width: 45%;
-  padding: 2em 2.5em 0 0;
-  box-sizing: border-box;
+.case-study-sidebar {
+  width: 90%;
+  color: #636060
+  padding-bottom: 15px;
 }
 
-.case-study .case-study-sidebar h2 {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.case-study .case-study-sidebar h4 {
+aside h2 {
   font-size: 1em;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
+  margin-top: 15px;
 }
 
-.case-study .case-study-sidebar h4 span {
-  color: #a6a6a6;
+aside h4 {
+  font-weight: lighter;
+  font-size: .7em;
+  margin-top: 10px
 }
 
-.case-study .case-study-sidebar p {
-  margin: 0;
+aside h4 span {
+  font-weight: 600;
 }
 
-.case-study .screenshots {
-  float: left;
-  width: 55%;
-  padding: 2em 0;
+.screenshots {
+  width: 100%;
+}
+
+.screenshots img {
+  margin-bottom: 60px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+            /* ----- Media Query CASE STUDY STYLES ----- */
+            @media (min-width: 768px) {
+
+            
+                .case-study {
+                  overflow: auto;
+                  margin-bottom: 45px;
+                }
+
+                .case-study-sidebar {
+                  float: left;
+                  width: 40%;
+                }
+
+                .screenshots img {
+                  float: right;
+                  width: 60%;
+                }
+            }
+
+
+/* CASE STUDIES ARCHIVE STYLES */
+.case-study-sidebar-archive {
+  width: 90%;
 }
 
 .screenshots img {
   width: 100%;
-  height: auto;
-  margin-bottom: 4em;
 }
 
-/* CASE STUDIES ARCHIVE STYLES */
-.case-study-archive {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-top: 2em;
-}
 
-.case-study-sidebar-archive {
-  width: 35%;
-  margin: 2em;
-}
 
-.case-study-sidebar-archive h2 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.case-study-sidebar-archive h4 {
-  font-size: 1em;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-}
-
-.case-study-sidebar-archive h4 span {
-  color: #a6a6a6;
-}
-
-.case-study-sidebar-archive p {
-  margin: 0;
-}
-
-.case-study-archive .screenshots img {
-  width: 100%;
-  max-width: 514px;
-  height: auto;
+/* MEDIA QUERY CASE STUDIES ARCHIVE STYLES */
+@media (min-width: 768px) {
+  /*.case-study-archive {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 2em;
+  } */
+  
+  .case-study-sidebar-archive {
+    float: left;
+    width: 31%;
+  }
+  
+  /*
+  .case-study-sidebar-archive h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .case-study-sidebar-archive h4 {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .case-study-sidebar-archive h4 span {
+    color: #a6a6a6;
+  }
+  
+  .case-study-sidebar-archive p {
+    margin: 0;
+  }
+  
+  */
+  .screenshots img {
+    float: right;
+    width: 60%;
+  }
+  
 }
 
 /* CONTACT Form Styles */

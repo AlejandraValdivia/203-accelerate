@@ -57,8 +57,9 @@ get_header(); ?>
 <!----- Recent BLOG post and TWITTER widget  ---->
 
 	<div class="blog-twitter-section"><!--.blog-twitter-section starts here--->
-				<section class="recent-posts">
-							<div class="site-content">
+		<div class="site-content">
+				<!--<section class="recent-posts">-->
+							
 							<div class="blog-post">
 								<h4>From the Blog</h4>
 								<?php query_posts('posts_per_page=1'); ?>
@@ -69,11 +70,12 @@ get_header(); ?>
 								<?php endwhile; // end of the loop. ?> 
 								<?php wp_reset_query(); // resets the altered query back to the original ?>
 							</div>
-							</div>
-				</section>
+		</div><!-- .site-content class ends here -->
+				<!-- </section> -->
 
 								<!-- Tweet widget starts here -->
-				<section class="twitter-posts">
+				<!--<section class="twitter-posts">-->
+
 								<div class="tweet-widget">
 										<h4>Recent Tweet</h4>
 											<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
@@ -86,7 +88,7 @@ get_header(); ?>
 													</div>
 											<?php endif; ?>
 									</div>
-					</section>
+				<!--	</section> -->
 	</div><!-- Blog Twitter section ends here -->
 
 <?php get_footer(); ?>
