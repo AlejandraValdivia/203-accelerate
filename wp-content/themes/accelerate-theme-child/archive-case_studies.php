@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the case studies archive page
+ * The template for displaying the archive of case studies
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -15,35 +15,28 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<div class="main-content" role="main">
-			<?php while ( have_posts() ) : the_post(); 
-				$services = get_field('services');
-				$image_1 = get_field('image_1');
-				$size = "full";
-			?>
+		<div id="content" role="main">
+            <?php while ( have_posts() ) : the_post(); 
+                $image_1 = get_field("image_1");
+                $size = "full";
+                $services = get_field('services');
+            ?>
+            <article class="case-study">
+                <aside class="case-study-sidebar">
+                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <h4><?php echo $services; ?></h4>
+                    <?php the_excerpt(); ?>
+                    <p class="read-more-link"><a href="<?php the_permalink(); ?>">View Project ›</a></p>
+                </aside>
 
-				<article class="case-study-archive">
-						<aside class="case-study-sidebar-archive">
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>   
-							<h4><span><?php echo $services; ?></span></h4>
-							<?php the_excerpt(); ?>
-							
-							<p class="read-more-link"><a href="<?php the_permalink(); ?>">View project ></a></p>
-						</aside>
-
-
-						<div class="screenshots">
-							<figure>
-								<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( $image_1, $size ); ?></a>
-							</figure>
-						</div>
-					</article>
-				
-				<?php endwhile; // end of the loop. ?>
+                <div class="case-study-images">
+                    <a href="<?php the_permalink(); ?>"><?php if($image_1) { echo wp_get_attachment_image( $image_1, $size ); } ?></a>
+                </div>
+            </article>            
+            <?php endwhile; // end of the loop. ?>           
 		</div><!-- .main-content -->
-
-		
-
 	</div><!-- #primary -->
-
+    <nav id="navigation" class="container">
+	<div class="left"><a href="<?php echo site_url('') ?>">&larr; <span>Back to homepage</span></a></div>
+    </nav>
 <?php get_footer(); ?>
