@@ -3,15 +3,14 @@ Theme Name:   Accelerate Theme Child
 Theme URI:    http://example.com/accelerate-theme-child/
 Description:  Accelerate Child Theme - Accelerate
 Author:   	  Alejandra Valdivia
-Author URI:   http://accelerate200.wpengine.com/
+Author URI:   https://accelerate200.wpengine.com/
 Template: 	  accelerate-theme
 Version:      2.0.0
-Tags:     	  light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  accelerate-theme-child
 */
 
-/* --- MOBILE first styles * ---/
-/* FOOTER Nav Styles */
+/* Footer Nav Styles */
 .social-media-menu {
   list-style-type: none;
   display: flex;
@@ -21,8 +20,8 @@ Text Domain:  accelerate-theme-child
 
 .social-media-menu li {
   background: #333;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -34,65 +33,48 @@ Text Domain:  accelerate-theme-child
   font-size: 1.2em;
 }
 
-/* HOMEPAGE Styles */
+
+/* Homepage Styles */
 .page-header .primary-navigation ul li a {
   margin: 0 1.5em;
 }
 
-#masthead,
-.button {
-  background: #44a694;
+#masthead, .button {
+  background: #44A694;
 }
 
 .hero-content {
-  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  background-image: url(img/taxi-photo.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-/* -----Featured Work ----- */
-
-.featured-work h4{
-	text-transform: uppercase;
-	text-align: center;	
-	margin: 34px 0;	
-}
-.featured-work{
-	text-align: center;
+.featured-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 4em;
 }
-.homepage-featured-work{
-	list-style: none;
-	display: flex;
-	justify-content: center;	
-	flex-wrap: wrap;	
+
+.featured-work h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 3em;
 }
-.individual-featured-work{
-	width: 90%;
-	align-items: center;	
-}
-.individual-featured-work h3{
-	text-align: center;
-	font-weight: 500;
-	margin: 20px 0 50px 0;	
+
+.homepage-featured-work {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 
-            /* ----- Media Query FRONT-PAGE FEATURED WORK Styles ----- */
-            /* FEATURED WORK STYLES */
-            @media (min-width: 768px) {
-              .featured-work {
-                margin-bottom: 4em;
-              }
-              
-              .homepage-featured-work {
-                display: flex;
-                justify-content: space-between;
-                flex-flow: row wrap;
-              }
-              
-            }
-            
+.individual-featured-work h3 {
+  text-align: center;
+  margin: .5em 0;
+  font-weight: 400;
+}
 
-/* Blog Posts FRONT PAGE styles */
 .blog-post, .tweet-widget {
   width: 50%;
   float: left;
