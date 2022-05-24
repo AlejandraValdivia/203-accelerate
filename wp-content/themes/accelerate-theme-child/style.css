@@ -476,9 +476,9 @@ p {
 }
 
 
-/* 404 Error Page Styles */
+/* 404 ERROR Page Styles */
 .error-page {
-  background-image: url('img/braydon-anderson-wOHH-NUTvVc-unsplash.jpg');
+  background-image: url('img\karsten-winegeart-2rHw1I_IoT4-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -499,12 +499,12 @@ p {
 }
 
 .error-message a {
-  color: #44A694;
+  color: #44a694;
   font-weight: 700;
 }
 
 .photo-credit {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 .photo-credit a {
   color: #fff;
