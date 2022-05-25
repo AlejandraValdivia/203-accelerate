@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="error-page">
+	<div id="primary" class="error-page background-color">
 		<div class="main-content" role="main">
 			<div class="error-message">
 				<h2>Uh oh!</h2>

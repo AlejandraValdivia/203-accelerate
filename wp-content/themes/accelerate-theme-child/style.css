@@ -10,7 +10,7 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 
-/* Footer Nav Styles */
+/* ---------- FOOTER NAV Styles ---------- */
 .social-media-menu {
   list-style-type: none;
   display: flex;
@@ -34,7 +34,7 @@ Text Domain:  accelerate-theme-child
 }
 
 
-/* HOMEPAGE STYLES */
+/*********** ---------- HOMEPAGE STYLES ---------- ***********/
 .home-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -47,8 +47,7 @@ Text Domain:  accelerate-theme-child
 background: #45ac9d;
 }
 
-/*-------------------------------*/
-/* FEATURED WORK STYLES */
+/* ---------- FEATURED WORK styles ---------- */
 .featured-work h4{
 text-transform: uppercase;
 text-align: center;	
@@ -73,31 +72,30 @@ font-weight: 500;
 margin: 20px 0 50px 0;	
 }
 
-  /***********************************************/
-  /* MEDIA QUERY FRONT-PAGE FEATURED WORK STYLES */
+  
+      /* Media query FRONT-PAGE FEATURED WORK styles */
 
-  @media (min-width: 768px) {
-    /* FEATURED WORK STYLES */
-    .featured-work h4{
-      text-transform: uppercase;
-      text-align: center;	
-    }
-    ul.homepage-featured-work{
-      align-content: center;
-      justify-content: space-between;	
-    }
-    .individual-featured-work{
-      width: 31%;
-    }
-  }
-  /************************************************/
-
-/*-------------------------------*/
-/* BLOG POST STYLES */
+      @media (min-width: 768px) {
+        /* FEATURED WORK styles */
+        .featured-work h4{
+          text-transform: uppercase;
+          text-align: center;	
+        }
+        ul.homepage-featured-work{
+          align-content: center;
+          justify-content: space-between;	
+        }
+        .individual-featured-work{
+          width: 31%;
+        }
+      }
+      
+/* ---------- BLOG POST styles ---------- */
 .blog-post {
-width: 65%;
-margin-bottom: 2em;
-margin: 20%;
+  width: 100%;
+  margin-bottom: 2em;
+  margin: 20%;
+  margin-left:auto
 }
 
 .blog-post h4 {
@@ -119,26 +117,24 @@ color: #45ac9d;
 text-transform: uppercase;
 }
 
-  /*********************************************/
-  /* MEDIA QUERY BLOG POST STYLES */
-  /* BLOG POST STYLES */
-  @media (min-width: 768px) {
-    .blog-post {
-      width: 40%;
-      float: left;
-      margin-bottom: 2em;
-      margin: 0 0 0 5%;
-    }
-  }
-  /*********************************************/
+  
+        /* Media query BLOG POST styles */
+        /* --- BLOG POST styles --- */
+        @media (min-width: 768px) {
+          .blog-post {
+            width: 40%;
+            float: left;
+            margin-bottom: 2em;
+            margin: 0 0 0 5%;
+          }
+        }
+        
 
-/*------------------------------*/
-/* TWITTER WIDGET */
+/* ---------- TWITTER widget ---------- */
 .twitter-posts{
-width: 100%;
-margin-right: 15%;
+width: 95%;
 margin-bottom: 2em;
-
+margin: auto;
 }
 
 .twitter-content ul{
@@ -152,20 +148,20 @@ width: 100%;
 margin-left: 5%;
 }
 
-/******** FONTS & LINKS ********/
-/* RECENT TWEET TITLE */
+/******** ---- FONTS & LINKS ---- ********/
+/* ---------- RECENT TWEET title ---------- */
 .twitter-content h5 {
 font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
 margin: 2em 0 .5em;
-margin-left: 23%;
+margin-left: 2%;
 }
 /* @Accelerate LINK */
 .twitter-posts h3 {
 font-size: 1.5em;
 margin-top: 25px;
-margin-left: 23%;
+margin-left: 2%;
 }
 /* FOLLOW US LINK */
 .read-more-link h4{
@@ -173,53 +169,60 @@ font-family: 'Montserrat';
 font-weight: 700;
 color: #45ac9d;
 text-transform: uppercase;
-margin-left: 23%;
+margin-left: 2%;
 }
 
-  /*********************************************/
-  /* MEDIA QUERY CASE STUDIES STYLES */
-  /* TWITTER WIDGET */
-  @media (min-width: 768px) {
-      .twitter-posts{
-      width: 45%;
-      float: right;
-      padding-right: 5%;
-      padding-left: 5%;
-      margin: 0;
-
-    }
-    
-    .twitter-content ul{
-      margin: 20px 0px 0 0;
-      width: 100%;
-    }
   
-    .twitter-content ul li{
-      margin-left: 0;
-    }
+        /* Media query CASE STUDIES styles */
+        /* --- TWITTER widget --- */
+        @media (min-width: 768px) {
+            .twitter-posts{
+            width: 45%;
+            float: right;
+            padding-right: 5%;
+            padding-left: 5%;    /* possibly need to delete this line of code */
+            margin: 0;
 
-    /******** FONTS & LINKS ********/
-    /* RECENT TWEET TITLE */
-    .twitter-content h5 {
-      margin-left: 0;
-    }
-    .tweets li{
-      width: 79%;
-      margin: 0 60% 0 0;
-    }
-    /* @Accelerate LINK */
-    .twitter-posts h3 {
-      margin-left: 0;
-      font-size: 1.5em;
-    }
-    /* FOLLOW US LINK */
-    .read-more-link h4{
-      margin-left: 0;
-    }
-  }
+          }
+          
+          .twitter-content ul{
+            margin: 20px 0px 0 0;
+            width: 100%;
+          }
+        
+          .twitter-content ul li{
+            margin-left: 0;
+          }
 
-/*-------------------------------*/
-/* ABOUT PAGE */
+          /******** FONTS & LINKS ********/
+          /* RECENT TWEET TITLE */
+          .twitter-content h5 {
+            margin-left: 0;
+          }
+          .tweets li{
+            width: 79%;
+            margin: 0 60% 0 0;
+          }
+          /* @Accelerate LINK */
+          .twitter-posts h3 {
+            margin-left: 0;
+            font-size: 1.5em;
+          }
+          /* FOLLOW US LINK */
+          .read-more-link h4{
+            margin-left: 0;
+          }
+        }
+/*******  Code to be ADDED  ---- Tweet Widget  ********/
+  #ctf p.ctf-media-link, #ctf p.ctf-tweet-text {
+    padding: 0!important;
+    margin: 0!important;
+    line-height: 1.65 !important;
+    width: 90%;
+}
+
+
+/* ---------- ABOUT page ---------- */
 /* HEADER */
 .main-content-about p{
   font-size: 1.2em;
@@ -257,7 +260,6 @@ margin-left: 23%;
   margin: 5% 10% 20% 10%;
   }
   
-  
   /* LOWER NAV AND BUTTON AREA */
   #navigation.container{
   overflow: auto;
@@ -275,93 +277,93 @@ margin-left: 23%;
   }
   
   
-      /********************************************/
-      /* MEDIA QUERY HEADER AND FOOTER NAV */
-  
-      @media (min-width: 768px) {
-        /* ABOUT PAGE */
-  
-        /* HEADER */
-        .main-content-about p{
-        font-size: 1.5em;
-        color: #ffffff;
-        margin: 0 30%;
-        }
-  
-        /* MAIN CONTENT */
-        .our-service h4,
-        .our-service{
-        text-align: center;
-        margin: 0 30%;
-        }
-        .our-service p{
-        margin-bottom: 70px;
-        }
-  
-        /* GENERAL BODY STYLES */
-        #secondary{
-        margin: 0 25%;
-        }
-  
-        #secondary h4{
-        font-size: 1.2em;	
-        }
-  
-        .icon-right,
-        .icon-left{
-        padding: 0;
-        margin: 0;
-        }
-  
-        /* ALTERNATING STYLES ICON AND TEXT*/
-        .content-strategy,
-        .influencer-mapping,
-        .social-media-strategy,
-        .design-development{
-        margin: 0 0 12% 0;
-        overflow: auto;
-        }
-  
-        .design-development{
-        margin-bottom: 10%;
-        }
-  
-        .icon-left{
-        float: left;
-        width: 25%;	
-        margin-top: 30px;
-        }
-  
-        .text-right{
-        float: right;
-        width: 65%;	
-        }
-  
-        .icon-right{
-        float: right;
-        width: 25%;
-        margin-top: 30px;
-        }
-  
-        .text-left{
-        float: left;
-        width: 65%;	
-        }
-  
-        /* LOWER NAV AND BUTTON AREA */
-        #navigation.container{
-        overflow: auto;
-        }
-  
-        #navigation p{
-        font-size: 1.4em;
-        display: inline-block;
-        margin: 30px 40px;
-        }
-      }
-      /********************************************/
-/*-------------------------------*/
-/* CASE STUDIES PAGE */
+      
+          /* MEDIA QUERY HEADER AND FOOTER NAV */
+      
+          @media (min-width: 768px) {
+            /* --- ABOUT PAGE --- */
+      
+            /* HEADER */
+            .main-content-about p{
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 0 30%;
+            }
+      
+            /* MAIN CONTENT */
+            .our-service h4,
+            .our-service{
+            text-align: center;
+            margin: 0 30%;
+            }
+            .our-service p{
+            margin-bottom: 70px;
+            }
+      
+            /* GENERAL BODY STYLES */
+            #secondary{
+            margin: 0 25%;
+            }
+      
+            #secondary h4{
+            font-size: 1.2em;	
+            }
+      
+            .icon-right,
+            .icon-left{
+            padding: 0;
+            margin: 0;
+            }
+      
+            /* ALTERNATING STYLES ICON AND TEXT*/
+            .content-strategy,
+            .influencer-mapping,
+            .social-media-strategy,
+            .design-development{
+            margin: 0 0 12% 0;
+            overflow: auto;
+            }
+      
+            .design-development{
+            margin-bottom: 10%;
+            }
+      
+            .icon-left{
+            float: left;
+            width: 25%;	
+            margin-top: 30px;
+            }
+      
+            .text-right{
+            float: right;
+            width: 65%;	
+            }
+      
+            .icon-right{
+            float: right;
+            width: 25%;
+            margin-top: 30px;
+            }
+      
+            .text-left{
+            float: left;
+            width: 65%;	
+            }
+      
+            /* LOWER NAV AND BUTTON AREA */
+            #navigation.container{
+            overflow: auto;
+            }
+      
+            #navigation p{
+            font-size: 1.4em;
+            display: inline-block;
+            margin: 30px 40px;
+            }
+          }
+      
+
+/* ---------- CASE STUDIES page ---------- */
 .case-study{
 	margin-bottom: 10px;
 }
@@ -388,34 +390,31 @@ aside h4 span{
 }
 .case-study-images img{
 	margin-bottom: 60px;
-/* KEEP IMAGES THE SAME SIZE AS ADDED */
 	width: 100%;
 	height: auto;
-/*********************/	
 }
-		/*********************************************/
-		/* MEDIA QUERY CASE STUDIES STYLES */
+        
+        /* Media query CASE STUDIES styles */
 
-		@media (min-width: 768px) {
-			/* CASE STUDIES ACRCHIVE PAGE STYLES */
-			.case-study{
-				overflow: auto;
-				margin-bottom: 45px;
-				
-			}
-			.case-study-sidebar{
-				float: left;
-				width: 40%;				
-			}			
-			.case-study-images img{
-				float: right;
-				width: 60%;	
-			}
-		}
-		/*********************************************/
+        @media (min-width: 768px) {
+          /* CASE STUDIES ACRCHIVE PAGE STYLES */
+          .case-study{
+            overflow: auto;
+            margin-bottom: 45px;
+          }
+          .case-study-sidebar{
+            float: left;
+            width: 40%;				
+          }			
+          .case-study-images img{
+            float: right;
+            width: 60%;	
+          }
+        }
+        
 
-/*-------------------------------*/
-/* CASE STUDIES ACRHIVE PAGE */
+
+/* ---------- CASE STUDIES Archive page ---------- */
 
 .case-study-sidebar{
 	width: 90%;
@@ -424,30 +423,24 @@ aside h4 span{
 	width: 100%;
 
 }
-		/********************************************/
-		/* MEDIA QUERY CASE STUDIES ARCHIVE STYLES */
+		
+        /* Media query CASE STUDIES ARCHIVE page styles */
 
-		@media (min-width: 768px) {
-			/* CASE STUDIES ACRCHIVE PAGE STYLES */
+        @media (min-width: 768px) {
+          /* CASE STUDIES ACRCHIVE page styles */
 
-			.case-study-sidebar{
-				float: left;
-				width: 31%;
-			}
-			.case-study-images img{
-				float: right;
-				width: 60%;
-			}
-		}
-		/********************************************/
+          .case-study-sidebar{
+            float: left;
+            width: 31%;
+          }
+          .case-study-images img{
+            float: right;
+            width: 60%;
+          }
+        }
+		
 
-
-
-
-
-
-/* TODO: specify these styles so they're only for contact form, not overriding the others */
-/* Contact Form Styles */
+/* ----- CONTACT Form Styles ----- */
 h2 {
   margin: 0;
 }
@@ -459,7 +452,6 @@ p {
 #nf-field-1, #nf-field-2, #nf-field-3 {
   background-color: #fff;
 }
-
 
 .main-content .nf-field-label label {      
   font-weight: normal;
@@ -476,11 +468,15 @@ p {
 }
 
 
-/* 404 ERROR Page Styles */
+/* ---------- 404 Error Page styles ---------- */
+
 .error-page {
   background-image: url('img\karsten-winegeart-2rHw1I_IoT4-unsplash.jpg');
   background-size: cover;
   background-position: center;
+}
+.background-color {
+  opacity: 0.6;
 }
 
 .error-message {
@@ -495,14 +491,20 @@ p {
 
 .error-message p {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .error-message a {
   color: #44a694;
   font-weight: 700;
 }
-
+.error-message .button {
+  font: 700 1em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
+  color: #fff;
+  background: #333;
+  padding: 1em 3.75em;
+  text-align: center;
+}
 .photo-credit {
   padding: 0.5em 1em;
 }
@@ -510,11 +512,19 @@ p {
   color: #fff;
 }
 
-/* Newsletter Widget Styles */
-input[type="submit"] {
-  background-color: #44A694;
-  padding: 0 .5em;
-}
+          /* Media queries Desktop ---- 404 ERROR PAGE --- */
+                @media (min-width: 768px) {
+                  .error-message p {
+                    color: #fff;
+                    font-size: 2em;
+                    }
+                  }
+
+          /* Newsletter Widget Styles */
+          input[type="submit"] {
+            background-color: #44A694;
+            padding: 0 2em;
+          }
 
 /* Social Sharing Widget Styles */
 .sfsi_responsive_icons .sfsi_responsive_icon_follow_container {
