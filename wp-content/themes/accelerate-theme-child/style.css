@@ -173,17 +173,28 @@ margin-left: 2%;
 }
 
   
-        /* Media query CASE STUDIES styles */
-        /* --- TWITTER widget --- */
+        /* Media query TWITTER widget styles */
+        
         @media (min-width: 768px) {
-            .twitter-posts{
+            /*.twitter-posts{
             width: 45%;
             float: right;
             padding-right: 5%;
             padding-left: 5%;    /* possibly need to delete this line of code */
-            margin: 0;
+            /*margin: 0;*/
+          /*}*/
 
-          }
+          .twitter-posts {
+            width: 50%;
+            float: right;
+            padding-right: 15%;
+            padding-left: 3%;
+            margin: 0;
+        }
+            #ctf .ctf-item {
+					padding: 0;
+          overflow: hidden;
+      }
           
           .twitter-content ul{
             margin: 20px 0px 0 0;
@@ -363,7 +374,7 @@ margin-left: 2%;
           }
       
 
-/* ---------- CASE STUDIES page ---------- */
+/* ---------- CASE STUDIES page ( Custom post type to display EACH case study )---------- */
 .case-study{
 	margin-bottom: 10px;
 }
@@ -394,27 +405,41 @@ aside h4 span{
 	height: auto;
 }
         
-        /* Media query CASE STUDIES styles */
+        /* Media query CASE STUDIES to display EACH case study styles */
 
-        @media (min-width: 768px) {
-          /* CASE STUDIES ACRCHIVE PAGE STYLES */
-          .case-study{
-            overflow: auto;
-            margin-bottom: 45px;
-          }
-          .case-study-sidebar{
-            float: left;
-            width: 40%;				
-          }			
-          .case-study-images img{
-            float: right;
-            width: 60%;	
-          }
-        }
-        
+          @media (min-width: 768px) {
+            /* CASE STUDIES STYLES */
+              .case-study{
+                overflow: auto;
+                margin: 45px;
+                padding-top: 2em;
+              }
+              .case-study-sidebar{
+                float: left;
+                width: 35%;				
+              }		
+                  aside h2{
+              font-size: 1.5em;
+              margin-top: 15px;
+            }
+            aside h4{
+              font-weight: lighter;
+              font-size: 1em;
+              margin-top: 10px;
+            }
+            aside h4 span{
+              font-weight: 600;
+            }
+              .case-study-images img{
+                float: right;
+                width: 60%;	
+              }
+                }
+            
+                  
 
 
-/* ---------- CASE STUDIES Archive page ---------- */
+/* ---------- CASE STUDIES ARCHIVE page ---------- */
 
 .case-study-sidebar{
 	width: 90%;
@@ -427,11 +452,11 @@ aside h4 span{
         /* Media query CASE STUDIES ARCHIVE page styles */
 
         @media (min-width: 768px) {
-          /* CASE STUDIES ACRCHIVE page styles */
+          /* CASE STUDIES ACRCHIVE */
 
           .case-study-sidebar{
             float: left;
-            width: 31%;
+            width: 35%;
           }
           .case-study-images img{
             float: right;
@@ -469,14 +494,13 @@ p {
 
 
 /* ---------- 404 Error Page styles ---------- */
-
+.error-container {
+  opacity: 0.8;
+}
 .error-page {
-  background-image: url('img\karsten-winegeart-2rHw1I_IoT4-unsplash.jpg');
+  background-image: url('img/karsten-winegeart-2rHw1I_IoT4-unsplash.jpg');
   background-size: cover;
   background-position: center;
-}
-.background-color {
-  opacity: 0.6;
 }
 
 .error-message {
@@ -526,7 +550,4 @@ p {
             padding: 0 2em;
           }
 
-/* Social Sharing Widget Styles */
-.sfsi_responsive_icons .sfsi_responsive_icon_follow_container {
-  background-color: #44A694;
-}
+

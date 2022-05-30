@@ -71,7 +71,7 @@ get_header(); ?>
 				<?php dynamic_sidebar( 'sidebar-2' ); ?>				
 			</div>				
 			<div class="read-more-link">
-				<h4><a href="https://twitter.com/Alex_V1000">Follow Us ></a></h4>			
+				<h4><a href="https://twitter.com/Alex_V1000">Follow Us ›</a></h4>			
 			</div>
 		<?php endif; ?>
 	</div>

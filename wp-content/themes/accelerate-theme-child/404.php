@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="error-page background-color">
-		<div class="main-content" role="main">
+	<div id="primary" class="error-page">
+		<div class="main-content error-container" role="main">
 			<div class="error-message">
 				<h2>Uh oh!</h2>
           <p>You have reached<br>
@@ -18,7 +18,7 @@ get_header(); ?>
              There's nothing here.<br>
              Looking for one of<br> 
              these?</p>
-          <div class="error-message">
+          <div class="">
             <a class="button" href="<?php echo site_url('/homepage/') ?>">Home</a>
           </div>
 			</div>
