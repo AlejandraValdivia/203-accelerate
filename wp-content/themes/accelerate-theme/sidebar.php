@@ -18,7 +18,7 @@
 		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 			<aside class="widget widget_text">
 				<div class="textwidget">
-					<p>This is a practice site for our <a href="http://skillcrush.com/">Skillcrush</a> students. <a href="https://skillcrush.com/wordpress-blueprint-package-first-to-know">We’d love to see you in class!</a></p>
+					<!--<p>This is a practice site for our <a href="http://skillcrush.com/">Skillcrush</a> students. <a href="https://skillcrush.com/wordpress-blueprint-package-first-to-know">We’d love to see you in class!</a></p>-->
 				</div>
 			</aside>
 
@@ -29,7 +29,7 @@
 				</form>
 			</aside>
 
-			<aside class="widget widget_categories">
+			<!-- <aside class="widget widget_categories">
 				<h2 class="widget-title">Categories</h2>
 				<ul>
 					<li><a href="">Books </a></li>
@@ -54,11 +54,11 @@
 			<aside class="widget widget_events">
 				<h2 class="widget-title">Events</h3>
 				<ul>
-					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/Brooklyn.png" alt=""/></a></li>
-					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/Rails.png" alt=""/></a></li>
-					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/Etsy.png" alt=""/></a></li>
+					<li><a href="#"><img src="<?php //echo get_template_directory_uri(); ?>/img/Brooklyn.png" alt=""/></a></li>
+					<li><a href="#"><img src="<?php //echo get_template_directory_uri(); ?>/img/Rails.png" alt=""/></a></li>
+					<li><a href="#"><img src="<?php //echo get_template_directory_uri(); ?>/img/Etsy.png" alt=""/></a></li>
 				</ul>
-			</aside>
+			</aside> -->
 		</div>
 	<?php endif; ?>
 </div>

@@ -1,0 +1,681 @@
+/*
+Theme Name:   Accelerate Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Accelerate Child Theme - Accelerate
+Author:   	  Alejandra Valdivia
+Author URI:   https://www.acceleratemarketingdemo.xyz/
+Template: 	  accelerate-theme
+Version:      2.0.0
+Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  accelerate-theme-child
+*/
+
+/* Main Menu */
+
+.menu-area {
+  background: var(--wpdevs-gray2);
+}
+.main-menu {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+}
+.main-menu ul {
+  margin: 0;
+  padding-left: 0;
+}
+.main-menu ul li {
+  display: inline-block;
+  line-height: 55px;
+  position: relative;
+}
+.main-menu ul li.current_page_item > a {
+  font-weight: bold;
+}
+.main-menu ul li a {
+  color: #000000;
+  padding: 0 30px;
+  text-decoration: none;
+  display: block;
+}
+.main-menu ul li a:hover,
+.main-menu ul li a:active {
+  color: var(--wpdevs-gray1);
+  transition: 0.5s all;
+}
+.main-menu ul li a:focus + ul {
+  display: block;
+}
+.main-menu li.menu-item-has-children::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 6px);
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #000000;
+  border-left: 6px solid transparent;
+}
+.main-menu ul.sub-menu {
+  position: absolute;
+  padding-left: 0;
+  background-color: #000000;
+  z-index: 1;
+  text-align: left;
+  display: none;
+}
+.main-menu ul .menu-item-has-children:hover > ul,
+.main-menu ul .menu-item-has-children:focus + ul {
+  display: block;
+}
+.main-menu ul.sub-menu li {
+  width: max-content;
+}
+.main-menu ul.sub-menu a {
+  color: #ffffff;
+}
+.menu-icon,
+.check-button {
+  cursor: pointer;
+  display: none;
+}
+.menu-icon .bar1,
+.menu-icon .bar2,
+.menu-icon .bar3 {
+  width: 28px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+@media (max-width: 767px) {
+  .menu-icon,
+  .check-button {
+    display: block;
+  }
+  .check-button {
+    border: none;
+    background: transparent;
+    height: 55px;
+  }
+  .main-menu ul {
+    position: absolute;
+    width: 100%;
+    background: #000000;
+    left: -999px;
+    text-align: left;
+    transition: all cubic-bezier(0.79, 0.14, 0.15, 0.86) 0.5s;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+  }
+  .main-menu ul:not(.sub-menu) {
+    margin-top: 55px;
+  }
+  .main-menu ul li {
+    display: block;
+    margin: 15px 0;
+    line-height: 30px;
+  }
+  .main-menu ul li a {
+    color: #ffffff;
+  }
+  .main-menu ul.sub-menu {
+    position: relative;
+    top: 0;
+    margin-left: 30px;
+    display: block;
+    width: auto;
+  }
+  .main-menu ul.sub-menu a {
+    color: var(--wpdevs-gray1);
+  }
+  .show-dropdown {
+    left: 0 !important;
+  }
+  .animate-button .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+    transform: rotate(-45deg) translate(-4px, 4px);
+  }
+  .animate-button .bar2 {
+    opacity: 0;
+  }
+  .animate-button .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);
+  }
+}
+
+/* ---------- FOOTER NAV Styles ---------- */
+.social-media-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media-menu li {
+  background: #333;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-menu li a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/*********** ---------- HOMEPAGE STYLES ---------- ***********/
+.home-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover
+    rgba(0, 0, 0, 0);
+}
+
+#masthead {
+  background: none repeat scroll 0 0 #45ac9d;
+}
+
+.button {
+  background: #45ac9d;
+}
+
+/* ---------- FEATURED WORK styles ---------- */
+.featured-work h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 34px 0;
+}
+.featured-work {
+  text-align: center;
+}
+ul.homepage-featured-work {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.individual-featured-work {
+  width: 90%;
+  align-items: center;
+}
+.individual-featured-work h3 {
+  text-align: center;
+  font-weight: 500;
+  margin: 20px 0 50px 0;
+}
+
+/* Media query FRONT-PAGE FEATURED WORK styles */
+
+@media (min-width: 768px) {
+  /* FEATURED WORK styles */
+  .featured-work h4 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  ul.homepage-featured-work {
+    align-content: center;
+    justify-content: space-between;
+  }
+  .individual-featured-work {
+    width: 31%;
+  }
+}
+
+/* ---------- BLOG POST styles ---------- */
+.blog-post {
+  width: 100%;
+  margin-bottom: 2em;
+  margin: 20%;
+  margin-left: auto;
+}
+
+.blog-post h4 {
+  font: 700 1em/1.75 "Montserrat", "Open Sans", Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 0.5em;
+}
+
+.blog-post h3 {
+  font-size: 1.5em;
+  margin-top: 25px;
+}
+
+.read-more-link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #45ac9d;
+  text-transform: uppercase;
+}
+
+/* Media query BLOG POST styles */
+/* --- BLOG POST styles --- */
+@media (min-width: 768px) {
+  .blog-post {
+    width: 40%;
+    float: left;
+    margin-bottom: 2em;
+    margin: 0 0 0 5%;
+  }
+}
+
+/* ---------- TWITTER widget ---------- */
+.twitter-posts {
+  width: 95%;
+  margin-bottom: 2em;
+  margin: auto;
+}
+
+.twitter-content ul {
+  list-style-type: none;
+  margin: 5% 20% 3% 20%;
+}
+
+.twitter-content li {
+  text-align: left;
+  width: 100%;
+  margin-left: 5%;
+}
+
+/******** ---- FONTS & LINKS ---- ********/
+/* ---------- RECENT TWEET title ---------- */
+.twitter-content h5 {
+  font: 700 1em/1.75 "Montserrat", "Open Sans", Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 0.5em;
+  margin-left: 2%;
+}
+/* @Accelerate LINK */
+.twitter-posts h3 {
+  font-size: 1.5em;
+  margin-top: 25px;
+  margin-left: 2%;
+}
+/* FOLLOW US LINK */
+.read-more-link h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #45ac9d;
+  text-transform: uppercase;
+  margin-left: 2%;
+}
+
+/* Media query TWITTER widget styles */
+
+@media (min-width: 768px) {
+  /*.twitter-posts{
+            width: 45%;
+            float: right;
+            padding-right: 5%;
+            padding-left: 5%;    /* possibly need to delete this line of code */
+  /*margin: 0;*/
+  /*}*/
+
+  .twitter-posts {
+    width: 50%;
+    float: right;
+    padding-right: 15%;
+    padding-left: 3%;
+    margin: 0;
+  }
+  #ctf .ctf-item {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .twitter-content ul {
+    margin: 20px 0px 0 0;
+    width: 100%;
+  }
+
+  .twitter-content ul li {
+    margin-left: 0;
+  }
+
+  /******** FONTS & LINKS ********/
+  /* RECENT TWEET TITLE */
+  .twitter-content h5 {
+    margin-left: 0;
+  }
+  .tweets li {
+    width: 79%;
+    margin: 0 60% 0 0;
+  }
+  /* @Accelerate LINK */
+  .twitter-posts h3 {
+    margin-left: 0;
+    font-size: 1.5em;
+  }
+  /* FOLLOW US LINK */
+  .read-more-link h4 {
+    margin-left: 0;
+  }
+}
+/*******  Code to be ADDED  ---- Tweet Widget  ********/
+#ctf p.ctf-media-link,
+#ctf p.ctf-tweet-text {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.65 !important;
+  width: 90%;
+}
+
+/* ---------- ABOUT page ---------- */
+/* HEADER */
+.main-content-about p {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin: 0 10%;
+}
+
+/* MAIN CONTENT */
+.our-service h4,
+.our-service {
+  text-align: center;
+  margin: 0 10%;
+}
+
+.our-service p {
+  margin-bottom: 20%;
+}
+
+/* GENERAL BODY STYLES */
+#secondary h4 {
+  font-size: 1.2em;
+}
+
+.icon-left,
+.icon-right {
+  padding: 20px 0 0px 0;
+  margin: 0 29%;
+}
+
+/* ALTERNATING STYLES ICON AND TEXT*/
+.content-strategy,
+.influencer-mapping,
+.social-media-strategy,
+.design-development {
+  margin: 5% 10% 20% 10%;
+}
+
+/* LOWER NAV AND BUTTON AREA */
+#navigation.container {
+  overflow: auto;
+}
+
+#navigation p {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 0;
+  padding: 0.3em 0;
+}
+
+#navigation .button {
+  padding: 0.8em 3.8em;
+}
+
+/* MEDIA QUERY HEADER AND FOOTER NAV */
+
+@media (min-width: 768px) {
+  /* --- ABOUT PAGE --- */
+
+  /* HEADER */
+  .main-content-about p {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 0 30%;
+  }
+
+  /* MAIN CONTENT */
+  .our-service h4,
+  .our-service {
+    text-align: center;
+    margin: 0 30%;
+  }
+  .our-service p {
+    margin-bottom: 70px;
+  }
+
+  /* GENERAL BODY STYLES */
+  #secondary {
+    margin: 0 25%;
+  }
+
+  #secondary h4 {
+    font-size: 1.2em;
+  }
+
+  .icon-right,
+  .icon-left {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ALTERNATING STYLES ICON AND TEXT*/
+  .content-strategy,
+  .influencer-mapping,
+  .social-media-strategy,
+  .design-development {
+    margin: 0 0 12% 0;
+    overflow: auto;
+  }
+
+  .design-development {
+    margin-bottom: 10%;
+  }
+
+  .icon-left {
+    float: left;
+    width: 25%;
+    margin-top: 30px;
+  }
+
+  .text-right {
+    float: right;
+    width: 65%;
+  }
+
+  .icon-right {
+    float: right;
+    width: 25%;
+    margin-top: 30px;
+  }
+
+  .text-left {
+    float: left;
+    width: 65%;
+  }
+
+  /* LOWER NAV AND BUTTON AREA */
+  #navigation.container {
+    overflow: auto;
+  }
+
+  #navigation p {
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 30px 40px;
+  }
+}
+
+/* ---------- CASE STUDIES page ( Custom post type to display EACH case study )---------- */
+.case-study {
+  margin-bottom: 10px;
+}
+
+.case-study-sidebar {
+  width: 90%;
+  color: #636060;
+  padding-bottom: 15px;
+}
+aside h2 {
+  font-size: 1em;
+  margin-top: 15px;
+}
+aside h4 {
+  font-weight: lighter;
+  font-size: 0.7em;
+  margin-top: 10px;
+}
+aside h4 span {
+  font-weight: 600;
+}
+.case-study-images {
+  width: 100%;
+}
+.case-study-images img {
+  margin-bottom: 60px;
+  width: 100%;
+  height: auto;
+}
+
+/* Media query CASE STUDIES to display EACH case study styles */
+
+@media (min-width: 768px) {
+  /* CASE STUDIES STYLES */
+  .case-study {
+    overflow: auto;
+    margin: 45px;
+    padding-top: 2em;
+  }
+  .case-study-sidebar {
+    float: left;
+    width: 35%;
+  }
+  aside h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+  }
+  aside h4 {
+    font-weight: lighter;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  aside h4 span {
+    font-weight: 600;
+  }
+  .case-study-images img {
+    float: right;
+    width: 60%;
+  }
+}
+
+/* ---------- CASE STUDIES ARCHIVE page ---------- */
+
+.case-study-sidebar {
+  width: 90%;
+}
+.case-study-images img {
+  width: 100%;
+}
+
+/* Media query CASE STUDIES ARCHIVE page styles */
+
+@media (min-width: 768px) {
+  /* CASE STUDIES ACRCHIVE */
+
+  .case-study-sidebar {
+    float: left;
+    width: 35%;
+  }
+  .case-study-images img {
+    float: right;
+    width: 60%;
+  }
+}
+
+/* ----- CONTACT Form Styles ----- */
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0.25em auto 2em auto;
+}
+
+#nf-field-1,
+#nf-field-2,
+#nf-field-3 {
+  background-color: #fff;
+}
+
+.main-content .nf-field-label label {
+  font-weight: normal;
+}
+
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+.nf-form-fields-required {
+  display: none;
+}
+#nf-field-4 {
+  background-color: #44a694;
+  float: right;
+  width: 25%;
+}
+
+/* ---------- 404 Error Page styles ---------- */
+
+.error-page {
+  background-image: url("img/karsten-winegeart-2rHw1I_IoT4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.error-message {
+  padding: 2em;
+}
+
+.error-message h2 {
+  color: #fff;
+  font-size: 3em;
+  font-family: "Londrina Solid", "Montserrat", "Open Sans", Arial, sans-serif;
+}
+
+.error-message p {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.error-message a {
+  color: #44a694;
+  font-weight: 700;
+}
+.error-message .button {
+  font: 700 1em/1 "Montserrat", "OpenSans", Arial, sans-serif;
+  color: #fff;
+  background: #333;
+  padding: 1em 3.75em;
+  text-align: center;
+}
+.photo-credit {
+  padding: 0.5em 1em;
+}
+.photo-credit a {
+  color: #fff;
+}
+
+/* Media queries Desktop ---- 404 ERROR PAGE --- */
+@media (min-width: 768px) {
+  .error-message p {
+    color: #fff;
+    font-size: 2em;
+  }
+}
+
+/* Newsletter Widget Styles */
+input[type="submit"] {
+  background-color: #44a694;
+  padding: 0 2em;
+}
+
+
