@@ -19,9 +19,9 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>
 			<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
-		<?php endwhile; // end of the loop. ?>
-	</div><!-- .main-content -->
-</div><!-- #primary -->
+		<?php endwhile;  ?>
+	</div>
+</div>
 
 <section class="featured-work">
 	<div class="site-content">
@@ -72,7 +72,7 @@ get_header(); ?>
 				<?php dynamic_sidebar( 'sidebar-2' ); ?>				
 			</div>				
 			<div class="read-more-link">
-				<h4><a href="https://www.instagram.com/hyperlinkwebcreative/">Follow Us ›</a></h4>			
+				<h4><a href="https://www.instagram.com/hyperlinkwebca/">Follow Us ›</a></h4>			
 			</div>
 		<?php endif; ?>
 	</div>
